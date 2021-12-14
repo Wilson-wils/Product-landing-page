@@ -1,4 +1,4 @@
-header {
+.header {
     position: fixed;
     top: 0px;
     width: 100%;
@@ -7,8 +7,8 @@ header {
     display: flex;
     align-items: center;
     background-color: white;
-    opacity: 0.9;
-    justify-content: space-around;
+    opacity: 0.8;
+    justify-content:space-evenly;
 }
 @media (max-width: 600px) {
     header {
@@ -22,7 +22,7 @@ body {
     width: 1000px;
     height: 50px;
 }
-#submit {
+.submit {
     padding: 0 20px;
     height: 40px;
     font-size: 1em;
@@ -33,19 +33,17 @@ body {
     background: transparent;
     cursor: pointer;
 }
-nav {
-    font-weight: 400;
-}
 
-#nav-bar{
+.nav-bar{
         font-size: 16px;
         font-weight: bold;
         padding: 0;
-        list-style: none;
-        text-decoration: none;
-        width: 30%;
         display: inline-block;
         justify-content:center;
+    }
+    .nav-link {
+        list-style: none;
+        text-decoration: none;
     }
 @media (max-width: 650px) {
     nav {
@@ -58,7 +56,7 @@ nav {
         padding: 0 50px;
     }
 }
-#form-section {
+.form-section {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -67,16 +65,16 @@ nav {
     height: 200px;
     margin-top: 50px;
 }
-#form-section >h4 {
+.form-section >h4 {
     margin-bottom: 15px;
     word-wrap: break-word;
 }
-#about {
+.about {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-#about >p {
+.about >p {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -84,7 +82,7 @@ nav {
     width: 400px;
     padding: 5px;
 }
-#products {
+.products {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -93,7 +91,7 @@ nav {
     border: 1px solid #000;
     border-radius: 10px;
 }
-#contact {
+.contact {
     display: flex;
     flex-direction: column;
     text-align: left;
